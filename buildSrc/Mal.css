@@ -17,14 +17,14 @@ https://myanimelist.net/forum/?topicid=1640096
 */
 .cover-block::after {
     background-image: url(https://cdn.myanimelist.net/s/common/userimages/d81d9561-156b-411b-b9fd-3b6364401432_225w?s=1e3a66e29e1466aaa0825a075705e8a4);
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 /* BANNER QUOTE
 */
 .cover-block::before {
     content: "P0bo";
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
  
@@ -32,7 +32,7 @@ https://myanimelist.net/forum/?topicid=1640096
 body, body.ownlist {
     background-image: url(https://i.imgur.com/Cu7LECc.jpg);
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
  
@@ -42,12 +42,12 @@ body, body.ownlist {
 .list-table > tbody:nth-of-type(2n+1),
 .list-table > tbody:nth-of-type(2n) {
     background-color: rgba(18,27,46,.4) !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 .list-unit .list-status-title {
     background-color: rgba(18,27,46,.3) !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
  
@@ -66,7 +66,7 @@ body, body.ownlist {
     background-color: transparent;
     width: 1000px;
     height:0px !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
  
@@ -78,7 +78,7 @@ body, body.ownlist {
     height:250px;
     width:1000px;
     background-image:url(http://i.imgur.com/oUcAp2Y.png);
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
  
@@ -106,7 +106,7 @@ body, body.ownlist {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .advanced-options-header {
@@ -116,7 +116,7 @@ body, body.ownlist {
     border-bottom: 1px solid #BEBEBE;
     font-size: 16px;
     color:rgba(18,27,46,.6) !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
  
@@ -132,7 +132,7 @@ body, body.ownlist {
 #advanced-options .filter-widget.aired-date .text,
 #advanced-options .filter-widget.published-date .text {
     color:rgba(18,27,46,.6) !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options select {
@@ -150,7 +150,7 @@ body, body.ownlist {
     padding: 4px 20px 4px 4px;
     padding-right: 4px\0;
     border: #BEBEBE 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 12px;
 }
 #advanced-options select::-ms-expand {
@@ -160,13 +160,13 @@ body, body.ownlist {
 #advanced-options select:disabled {
     background-image: url(/img/pc/ownlist/icon_pulldown_triangle_disable.png);
     color: #9B9B9B;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options input[type=text] {
     padding: 4px;
     border: #BEBEBE 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options input:focus {
@@ -179,7 +179,7 @@ body, body.ownlist {
     margin: 0px auto;
     padding: 12px 0px 0px;
     width: 750px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #advanced-options .sort-widget:last-of-type {
     padding-bottom: 45px;
@@ -188,7 +188,7 @@ body, body.ownlist {
 #advanced-options .sort-widget select {
     width: 172px;
     margin-right: 8px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .sort-widget input[type=radio] {
@@ -200,7 +200,7 @@ body, body.ownlist {
     width: 56px;
     padding: 5px 0px;
     border: #BEBEBE 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #323232;
     font-size: 12px;
     text-align: center;
@@ -210,18 +210,18 @@ body, body.ownlist {
     background-color: #244291;
     border: #244291 1px solid;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #advanced-options .sort-widget input[type=radio]:disabled + label {
     border: #BEBEBE 1px solid;
     color: #9B9B9B;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #advanced-options .sort-widget input[type=radio]:checked:disabled + label {
     background-color: #FFFFFF;
     border: #BEBEBE 1px solid;
     color: #9B9B9B;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 /* filter */
@@ -229,36 +229,36 @@ body, body.ownlist {
     margin: 0px auto;
     padding: 12px 0px 0;
     width: 750px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget select {
     margin-right: 8px;
     font-size: 12px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.title input[type=text] {
     width: 360px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.airing-status select,
 #advanced-options .filter-widget.publishing-status select {
     width: 152px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.producer select,
 #advanced-options .filter-widget.magazine select {
     width: 360px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.aired-date select.year,
 #advanced-options .filter-widget.published-date select.year {
     width: 80px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.aired-date select.month,
@@ -266,7 +266,7 @@ body, body.ownlist {
 #advanced-options .filter-widget.aired-date select.day,
 #advanced-options .filter-widget.published-date select.day {
     width: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.aired-date .text,
@@ -274,17 +274,17 @@ body, body.ownlist {
     display: inline-block;
     margin-right: 4px;
     font-size: 12px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.aired-season select.year {
     width: 80px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .filter-widget.aired-season select.season {
     width: 110px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .sort-widget .widget-header,
@@ -293,7 +293,7 @@ body, body.ownlist {
     width: 110px;
     font-size: 12px;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .sort-widget:last-of-type,
@@ -307,17 +307,17 @@ body, body.ownlist {
     padding: 12px 0px 0px;
     border-top: 1px solid #BEBEBE;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .btn-apply,
 #advanced-options .btn-clear {
-    background-color: rgba(18,27,46, 0.8);
+    background-color: rgba(18,27,46, 0.6);
     display: inline-block;
     width: 135px;
     margin: 0 4px;
     padding: 6px 0px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 12px;
     color: #FFFFFF;
     text-align: center;
@@ -333,13 +333,13 @@ body, body.ownlist {
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #advanced-options .btn-apply:hover,
 #advanced-options .btn-clear:hover {
-    background-color: rgba(18,27,46, 0.8);
-    border-radius: 10px;
+    background-color: rgba(18,27,46, 0.6);
+    border-radius: 5px;
 }
  
  
@@ -352,18 +352,18 @@ td {
     line-height: 1.5em;
     height: 35px !important;
     border: none !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 a {
     color: #fff;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 a:hover {
     color: #fff !important;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #footer-block {
@@ -372,7 +372,7 @@ a:hover {
     color: #FFFFFF;
     font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
     display: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 #copyright {
@@ -380,7 +380,7 @@ a:hover {
     color: #FFFFFF;
     padding-top: 3px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
@@ -391,12 +391,12 @@ a:hover {
 .header a {
     font-weight: bold;
     color: #fff !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header a:hover {
     text-decoration: underline;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header {
@@ -424,7 +424,7 @@ a:hover {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     z-index: 40;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header:hover {
@@ -441,7 +441,7 @@ a:hover {
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header .header-menu {
@@ -459,7 +459,7 @@ a:hover {
     margin-top: 6px;
     margin-right: 15px;
     text-align: right;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header .username {
@@ -477,7 +477,7 @@ a:hover {
     -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header .header-menu .list-menu .icon-menu {
@@ -500,12 +500,12 @@ a:hover {
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header .header-menu .list-menu .icon-menu:hover {
     background-color: rgba(18,27,46,.5);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header .header-menu .list-menu .icon-menu svg.icon {
@@ -527,7 +527,7 @@ a:hover {
 
 .header .header-menu .list-menu .icon-menu:hover .text {
     color:rgba(255,255,255,1) !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header .header-menu .btn-menu {
@@ -536,12 +536,12 @@ a:hover {
     color: rgba(18,27,46,0.7) !important;
     font-size: 12px !important;
     text-shadow: 0 0 2px #000, 0 0 1px #000, 1px 1px 7px #000, 0 0 0 #000;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #header-menu-dropdown > a {
     color: rgba(18,27,46,.5) !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* svg.icon.icon-manga-list {color: rgba(18,27,46,.5) !important;} */
@@ -564,7 +564,7 @@ a:hover {
     height: 50px;
     width: 40px;
     line-height: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     backdrop-filter: blur(20px); /* Apply blur effect */
 }
 
@@ -583,7 +583,7 @@ a:hover {
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .list-menu-float {
@@ -595,7 +595,7 @@ a:hover {
     opacity: 1;
     height: 40px !important;
     z-index: 100;
-    border-radius: 10px;
+    border-radius: 5px;
     backdrop-filter: blur(20px); /* Apply blur effect */
 }
 
@@ -607,7 +607,7 @@ a:hover {
     line-height: 30px;
     text-indent: 10px;
     opacity: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     backdrop-filter: blur(20px); /* Apply blur effect */
 }
 
@@ -625,7 +625,7 @@ a:hover {
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .list-menu-float .icon-menu.profile {
@@ -654,7 +654,7 @@ a:hover {
 .list-menu-float .icon-menu:hover {
     width: 120px !important;
     background-color: rgba(21, 30, 46, 0.4) !important; /* Semi-transparent black */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .list-menu-float .icon-menu:hover .text,
@@ -662,7 +662,7 @@ a:hover {
 .list-menu-float .icon-menu:hover:after {
     color: #fff;
     width: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .list-menu-float .icon-menu.logout {
@@ -698,7 +698,7 @@ a:hover {
     box-shadow: none; /* Remove shadow */
     border: none !important;
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
 
@@ -715,7 +715,7 @@ a:hover {
     vertical-align: middle;
     /*box-shadow: none;*/ /* Remove shadow */
     padding-bottom: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
     backdrop-filter: blur(10px); /* Apply blur effect */
 }
 
@@ -743,7 +743,7 @@ a:hover {
     background-color: transparent;
     background-size: cover !important;
     background-position: 50% 50%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* setting icon */
@@ -762,7 +762,7 @@ a:hover {
     color: #ffffff;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     background-color: rgba(21, 30, 46, 0.4); /* Semi-transparent black */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .cover-block .image-container .btn-list-setting:hover {
@@ -775,7 +775,7 @@ a:hover {
     font-size: 14px;
     color: #ffffff;
     text-shadow: #323232 1px 1px 1px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .cover-block .image-container .btn-list-setting .fa-camera {
@@ -790,7 +790,7 @@ a:hover {
     background-color: rgba(21, 30, 46, 0.4);
     border-radius: 50%;
     font-size: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .cover-block .image-container .btn-list-setting .text {
@@ -800,7 +800,7 @@ a:hover {
 .cover-block .image-container .btn-list-setting:hover .text {
     display: inline-block;
     margin-left: 4px;
-    border-radius: 10px;
+    border-radius: 5px;
 } 
 
 
@@ -817,7 +817,7 @@ a:hover {
     border-bottom: none;
     z-index: 1;
     margin-top: -40px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .status-menu-container.fixed {
@@ -849,7 +849,7 @@ a:hover {
     line-height: 1.105em;
     font-size: 1.1em;
     color: #9B9B9B;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .status-menu-container .status-menu .status-button.on {
@@ -872,7 +872,7 @@ a:hover {
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .status-menu-container .status-menu .status-button.on:after,
@@ -938,7 +938,7 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     border: 2px solid #f5f5f5;
     background-color: #9B9B9B;
-    border-radius: 10px;
+    border-radius: 5px;
 }   
 
 
