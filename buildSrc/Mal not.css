@@ -1,0 +1,11 @@
+/*BANNER AVATAR
+*/
+.cover-block::after {
+    background-image: url(https://cdn.myanimelist.net/s/common/userimages/d81d9561-156b-411b-b9fd-3b6364401432_225w?s=1e3a66e29e1466aaa0825a075705e8a4);
+}
+ 
+/* BANNER QUOTE
+*/
+.cover-block::before {
+    content: "P0bo";
+}
