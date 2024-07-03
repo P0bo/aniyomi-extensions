@@ -270,10 +270,7 @@ a:hover {
     height: 50px;
     margin: 0 auto;
     border: none;
-    background: -webkit-linear-gradient(rgba(18,27,46,.4), transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(18,27,46,.4), transparent); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(18,27,46,.4), transparent); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(18,27,46,.4), transparent); /* Standard syntax */
+    background:none;
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -289,20 +286,20 @@ a:hover {
     z-index: 40;
 }
 .header:hover {
-    background-color:rgba(18,27,46,.5);
+    background:linear-gradient(rgba(18,27,46,.5),transparent);
     backdrop-filter: blur(20px);
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
     transition-property: all;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
     -moz-transition-timing-function: ease-in-out;
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; 
 }
 .header .header-menu {
     position: absolute;
@@ -385,12 +382,19 @@ a:hover {
     color: rgba(18,27,46,.5) !important;
     backdrop-filter:blur(20px);
 }
-
+.list-menu-float {
+    position: fixed;
+    display: block;
+    top: auto;
+    width: 50px;
+    border: none;
+    z-index: 2;
+}
 
 .list-menu-float .icon-menu {
     display: block;
     background-color: rgba(18,27,46,.1);
-    border-radius: 0px;
+    border-radius: 10px;
     backdrop-filter: blur(20px);
 }
 
@@ -412,7 +416,7 @@ a:hover {
     transition-timing-function: ease-in-out;
     backdrop-filter: blur(20px);
     background-color: rgba(18,21,40,0.1);
-    border-radius:5px;
+    border-radius:10px;
 } 
 
 
@@ -755,27 +759,45 @@ a:hover {
 
 .list-table .list-table-header {
     position: absolute;
-    display: block;
-    margin-left: 1100px;
-    margin-top: -87px;
+    background: linear-gradient(270deg, #1c439b, transparent);
+    border-radius: 10px;
+    display: flex;
+    margin-left: -67px;
+    margin-top: -85px;
     z-index: 220 !important;
-    background-color:#1825413f;
-    border-radius:10px;
-    backdrop-filter: blur(10px);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end; 
+    opacity:0;
+} 
+ .list-table .list-table-header:hover {
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
 }
-
 .list-table .list-table-header .header-title {
     background: #F6F6F6 url("/img/pc/ownlist/bar-table-header.png") no-repeat right 7px / 1px 22px;
     display: block;
     border-bottom: 0;
-    height: 39px;
+    height: 40px;
     text-align: center;
     vertical-align: middle;
     z-index: 60 !important;
-    opacity: 1;
-   border-radius:10px;
-   background-color: #FFFFFF0f ;
-  backdrop-filter:blur(20px);
+    opacity: 0;
+    border-radius:10px;
+    background-color:transparent ;
 }
 
 .list-table .list-table-header:hover .header-title {
@@ -792,6 +814,7 @@ a:hover {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
    border-radius:10px;
+   opacity:1;
 }
 
 .list-table .list-table-header .header-title:last-child {
@@ -927,13 +950,45 @@ a:hover {
     transition-timing-function: ease-in-out;
 }
 
-.list-table .list-table-header .header-title .link.sort:hover {
-    color: #000;
-    background-color: rgba(0, 0, 0, .5);
-    height: 40px;
-    width: 90px;
-}
 
 .list-table .list-table-header .header-title .sort-icon {
     color: #fff;
+}   
+
+
+
+.header .header-title {
+    position: absolute;
+    top: 7px;
+    left: 77px;
+    background-image: url(/img/pc/ownlist/logo_mal.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 36px;
+    display: block;
+    width: 240px;
+    height: 36px;
+    text-indent: -9999px;
+    overflow: hidden;
+} 
+ 
+ 
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting, .list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+
+    position: absolute;
+    background-color: #4065BA;
+    display: block;
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+
+
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+    border-top: #ebebeb00 2px solid;
+    top: 52px;
 }
