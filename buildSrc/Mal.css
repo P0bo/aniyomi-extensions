@@ -9,7 +9,7 @@ https://myanimelist.net/forum/?topicid=1640096
  
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkbefore";
 @\import "https://fonts.googleapis.com/css?family=Tilt+Neon";
-@\import "https://fonts.googleapis.com/css?family=Slabo+27px|PT+Sans+Narrow";
+@\import "https://fonts.googleapis.com/css?family=Itim";
  
  
  
@@ -1402,7 +1402,7 @@ a:hover {
 .list-table .list-table-data .data.title .link {
     font-size: 16px !important;
     text-decoration: none !important;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Itim', sans-serif;
     font-weight: 100 !important;
     transition: all 0.3s ease 0s;
     color: #fff;
