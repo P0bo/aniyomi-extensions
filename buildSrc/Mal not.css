@@ -481,7 +481,6 @@ a:hover {
     background-color: transparent;
     background-size: cover !important;
     background-position: 50% 50%;
-    border-radius: 1110px;
 }
 
 /* setting icon */
@@ -500,7 +499,6 @@ a:hover {
     color: #ffffff;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     background-color: rgba(21, 30, 46, 0.4); /* Semi-transparent black */
-    border-radius: 1110px;
 }
 
 
@@ -541,7 +539,56 @@ a:hover {
     display: inline-block;
     margin-left: 4px;
     border-radius: 0px;
-} 
+}  
+
+
+
+
+
+
+
+/*profile image & name */
+ 
+.cover-block::after {
+height: 120px !important;
+width: 120px! important;
+background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+display:block !important;
+margin-left:57px;
+margin-top:-70px;
+content: "";
+z-index: 2 !important;
+padding: 5px;
+background-color:#fff;
+box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+border-radius:5px;
+border: #fff 2px solid;
+}
+ 
+.cover-block::before {
+position: absolute;
+display:block !important;
+margin-left:200px;
+bottom:40px;
+width: 300px;
+color: #ffffff;
+font-size: 29px !important;
+font-family: Rancho;
+text-align: left;
+text-shadow: 0 0 2px #000, 0 0 1px #000, 1px 1px 7px #000, 0 0 0 #000 !important;
+letter-spacing: 0 !important; 
+}
+
+
+
+
+
+
+
+
+
 
  /*
 * List Container - Status Menu
@@ -984,7 +1031,8 @@ a:hover {
     text-decoration: none;
     opacity: 1;
     border-radius: 10px;
-}
+} 
+ 
 
 
 
