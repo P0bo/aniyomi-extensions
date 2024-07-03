@@ -8,7 +8,7 @@ https://myanimelist.net/forum/?topicid=1640096
 */
  
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkbefore";
-@\import "https://fonts.googleapis.com/css?family=Rancho";
+@\import "https://fonts.googleapis.com/css?family=Tilt+Neon";
 @\import "https://fonts.googleapis.com/css?family=Slabo+27px|PT+Sans+Narrow";
  
  
@@ -16,21 +16,21 @@ https://myanimelist.net/forum/?topicid=1640096
 /*BANNER AVATAR
 */
 .cover-block::after {
-    background-image: url(http://i.imgur.com/AYGqofj.png);
+    background-image: url(https://cdn.myanimelist.net/s/common/userimages/d81d9561-156b-411b-b9fd-3b6364401432_225w?s=1e3a66e29e1466aaa0825a075705e8a4);
     border-radius: 10px;
 }
  
 /* BANNER QUOTE
 */
 .cover-block::before {
-    content: "Moment Happening";
+    content: "P0bo";
     border-radius: 10px;
 }
  
  
 /* WALLPAPER */
 body, body.ownlist {
-    background-image: url(http://i.imgur.com/vuarwtS.jpg);
+    background-image: url(https://i.imgur.com/Cu7LECc.jpg);
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border-radius: 10px;
 }
@@ -41,12 +41,12 @@ body, body.ownlist {
  
 .list-table > tbody:nth-of-type(2n+1),
 .list-table > tbody:nth-of-type(2n) {
-    background-color: rgba(0,0,0,.4) !important;
+    background-color: rgba(18,27,46,.4) !important;
     border-radius: 10px;
 }
  
 .list-unit .list-status-title {
-    background-color: rgba(0,0,0,.3) !important;
+    background-color: rgba(18,27,46,.3) !important;
     border-radius: 10px;
 }
  
@@ -92,11 +92,11 @@ body, body.ownlist {
     width: 860px;
     margin: 0 auto;
     padding: 25px 0px 30px;
-    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
-    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
-    -ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(18,27,46,0.3);
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(18,27,46,0.3);
+    -o-box-shadow: 0px 2px 8px 0px rgba(18,27,46,0.3);
+    -ms-box-shadow: 0px 2px 8px 0px rgba(18,27,46,0.3);
+    box-shadow: 0px 2px 8px 0px rgba(18,27,46,0.3);
     color: #323232;
     text-align: left;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
@@ -115,7 +115,7 @@ body, body.ownlist {
     padding-bottom: 4px;
     border-bottom: 1px solid #BEBEBE;
     font-size: 16px;
-    color:rgba(0,0,0,.6) !important;
+    color:rgba(18,27,46,.6) !important;
     border-radius: 10px;
 }
  
@@ -124,14 +124,14 @@ body, body.ownlist {
     font-size: 12px;
     font-weight: normal;
     margin-left: 8px;
-    color:rgba(0,0,0,.6) !important;
+    color:rgba(18,27,46,.6) !important;
 }
  
 #advanced-options .sort-widget .widget-header,
 #advanced-options .filter-widget .widget-header,
 #advanced-options .filter-widget.aired-date .text,
 #advanced-options .filter-widget.published-date .text {
-    color:rgba(0,0,0,.6) !important;
+    color:rgba(18,27,46,.6) !important;
     border-radius: 10px;
 }
  
@@ -312,7 +312,7 @@ body, body.ownlist {
  
 #advanced-options .btn-apply,
 #advanced-options .btn-clear {
-    background-color: rgba(0,0,0, 0.8);
+    background-color: rgba(18,27,46, 0.8);
     display: inline-block;
     width: 135px;
     margin: 0 4px;
@@ -338,7 +338,7 @@ body, body.ownlist {
  
 #advanced-options .btn-apply:hover,
 #advanced-options .btn-clear:hover {
-    background-color: rgba(0,0,0, 0.8);
+    background-color: rgba(18,27,46, 0.8);
     border-radius: 10px;
 }
  
@@ -407,10 +407,10 @@ a:hover {
     height: 50px;
     margin: 0 auto;
     border: none;
-    background: -webkit-linear-gradient(rgba(0,0,0,.4), transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0,0,0,.4), transparent); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0,0,0,.4), transparent); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(0,0,0,.4), transparent); /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(18,27,46,.4), transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(18,27,46,.4), transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(18,27,46,.4), transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(18,27,46,.4), transparent); /* Standard syntax */
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -428,7 +428,7 @@ a:hover {
 }
 
 .header:hover {
-    background-color:rgba(0,0,0,.5);
+    background-color:rgba(18,27,46,.5);
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -504,13 +504,13 @@ a:hover {
 }
 
 .header .header-menu .list-menu .icon-menu:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(18,27,46,.5);
     border-radius: 10px;
 }
 
 .header .header-menu .list-menu .icon-menu svg.icon {
     position: absolute;
-    fill: rgba(0,0,0,.5);
+    fill: rgba(18,27,46,.5);
     left: 12px;
     top: 4px;
 }
@@ -533,18 +533,18 @@ a:hover {
 .header .header-menu .btn-menu {
     display: block;
     text-align: right;
-    color: rgba(0,0,0,0.7) !important;
+    color: rgba(18,27,46,0.7) !important;
     font-size: 12px !important;
     text-shadow: 0 0 2px #000, 0 0 1px #000, 1px 1px 7px #000, 0 0 0 #000;
     border-radius: 10px;
 }
 
 #header-menu-dropdown > a {
-    color: rgba(0,0,0,.5) !important;
+    color: rgba(18,27,46,.5) !important;
     border-radius: 10px;
 }
 
-/* svg.icon.icon-manga-list {color: rgba(0,0,0,.5) !important;} */
+/* svg.icon.icon-manga-list {color: rgba(18,27,46,.5) !important;} */
 
 
 
@@ -858,7 +858,7 @@ a:hover {
 }
 
 .status-menu-container .status-menu .status-button:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(18,27,46,.5);
     color: #fff;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -1839,7 +1839,7 @@ td.td1.borderRBL {
     width: 300px;
     color: #ffffff;
     font-size: 29px !important;
-    font-family: Rancho;
+    font-family: Tilt Neon;
     text-align: left;
     text-shadow: 0 0 2px #000, 0 0 1px #000, 1px 1px 7px #000, 0 0 0 #000 !important;
     letter-spacing: 0 !important;
