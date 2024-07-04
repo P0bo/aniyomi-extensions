@@ -8,26 +8,24 @@
 /* BANNER QUOTE
 */
 .cover-block::before {
-    content: "";
+    content: "P0bo";
 }
 /* ANIME/MANGA CONTAINER SETTINGS */
  
 .list-table > tbody:nth-of-type(2n+1) {
-    background-color: rgba(18,27,46,.26) !important;
-} 
+    background-color: rgba(18,27,46,.28) !important;
+}
 .list-table > tbody:nth-of-type(2n) {
     background-color: rgba(18,27,46,.3) !important;
 } 
-
-table.list-table td:nth-child(3) {
-    Width: 50px;
-}
-
 
 table.list-table td:nth-child(1) {
   border-radius: 50px;
 }
 
+table.list-table td:nth-child(3) {
+  width: 33px;
+}
 
  
  /* Other code */
@@ -860,4 +858,16 @@ a:hover {
 .list-menu-float .icon-menu.setting:hover .text .link-style-setting {
     border-top: #ebebeb00 2px solid;
     top: 52px;
+}
+
+ .list-table .list-table-data .data.image .image {
+width: 30px !important;
+height: 30px !important;
+background-size:cover;
+border:1px solid #fff;
+-webkit-box-shadow:2px 2px 8px -3px rgba(0,0,0,.76);
+-moz-box-shadow:2px 2px 8px -3px rgba(0,0,0,.76);
+box-shadow:2px 2px 8px -3px rgba(0,0,0,.76);
+border-radius:180px;
+display:inline-block!important;
 }
