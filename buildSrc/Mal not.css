@@ -8,11 +8,13 @@
 /* BANNER QUOTE
 */
 .cover-block::before {
-    content: "P0bo";
+    content: "";
 }
 /* ANIME/MANGA CONTAINER SETTINGS */
  
-.list-table > tbody:nth-of-type(2n+1),
+.list-table > tbody:nth-of-type(2n+1) {
+    background-color: rgba(18,27,46,.26) !important;
+} 
 .list-table > tbody:nth-of-type(2n) {
     background-color: rgba(18,27,46,.3) !important;
 } 
