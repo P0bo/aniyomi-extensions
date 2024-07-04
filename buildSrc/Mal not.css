@@ -14,8 +14,20 @@
  
 .list-table > tbody:nth-of-type(2n+1),
 .list-table > tbody:nth-of-type(2n) {
-    background-color: rgba(18,27,46,.4) !important;
+    background-color: rgba(18,27,46,.3) !important;
+} 
+
+table.list-table td:nth-child(3) {
+    Width: 50px;
 }
+
+
+table.list-table td:nth-child(1) {
+  border-radius: 50px;
+}
+
+
+ 
  /* Other code */
 .list-unit .list-status-title {
     background-color: rgba(18,27,46,.3) !important; 
@@ -39,10 +51,12 @@
     text-align: left;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     z-index: 1101;
+    border: 0px solid white;
 }
 #advanced-options .btn-apply:hover, #advanced-options .btn-clear:hover {
-    background-color: rgba(64, 101, 186, 0.8);
+    background-color: rgba(40, 89, 170, 0.5);
     border-radius: 50px;
+    border: 1px solid white;
 }
 #advanced-options .btn-apply, #advanced-options .btn-clear {
     background-color: rgba(64, 101, 186, 1);
@@ -50,7 +64,7 @@
     width: 135px;
     margin: 0 4px;
     padding: 6px 0px;
-    border-radius: 4px;
+    border-radius: 22px;
     font-size: 12px;
     color: #FFFFFF;
     border-radius: 10px;
@@ -90,7 +104,21 @@ a:hover {
 }
 #copyright {
     font-size: 00px;
+} 
+
+/* Round Corner of bottom cell */
+
+.list-unit .loading-space {
+    margin: 0px;
+    height: 67px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(18,27,46,.3);
+    border-radius: 0 0 20px 20px;
 }
+
+
+
 /*
 * Header
 */
