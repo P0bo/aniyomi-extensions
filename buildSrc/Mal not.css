@@ -111,8 +111,8 @@ a:hover {
 /* Round Corner of bottom cell */
 
 .list-unit .loading-space {
-    margin: 0px;
-    height: 67px;
+    margin: 0 0 20px 0;
+    height: 38px;
     font-size: 20px;
     text-align: center;
     background-color: rgba(18,27,46,.3);
