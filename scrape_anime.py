@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import os
 
 def fetch_anime_data(aid):
-    url = f"http://api.anidb.net:9001/httpapi?request=anime&client=pobo&clientver=1&protover=1&aid={aid}"
+    url = f""
     response = requests.get(url)
     if response.status_code == 200:
         return response.text
