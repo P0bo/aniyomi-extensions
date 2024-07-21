@@ -12,7 +12,7 @@ def fetch_anime_data(aid):
         raise Exception(f"Failed to fetch data for AID {aid}")
 
 def parse_anime_data(xml_content):
-    soup = BeautifulSoup(xml_content, 'xml')
+    soup = BeautifulSoup(xml_content, 'lxml-xml')
 
     # Find all episodes with epno type="1"
     episodes = soup.find_all('episode', epno={'type': '1'})
