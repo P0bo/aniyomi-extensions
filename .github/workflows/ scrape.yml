@@ -1,11 +1,12 @@
 name: Scrape Anime XML
 
 on:
-  push:
-    paths:
-      - 'anime.xml'
-      - 'scrape_anime.py'
   workflow_dispatch:
+    inputs:
+      aid:
+        description: 'Anime ID (AID) to fetch'
+        required: true
+        default: '1'
 
 jobs:
   scrape:
@@ -23,8 +24,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install beautifulsoup4
+        pip install beautifulsoup4 requests
 
     - name: Run the scraper
       run: |
-        python scrape_anime.py
+        python scrape_anime.py ${{ github.event.inputs.aid }}
