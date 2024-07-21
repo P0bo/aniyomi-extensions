@@ -1,7 +1,8 @@
-# scrape_anime.py
 import sys
 import requests
+import json
 from bs4 import BeautifulSoup
+import os
 
 def fetch_anime_data(aid):
     url = f"http://api.anidb.net:9001/httpapi?request=anime&client=pobo&clientver=1&protover=1&aid={aid}"
@@ -17,7 +18,7 @@ def parse_anime_data(xml_content):
     # Find all episodes with epno type="1"
     episodes = soup.find_all('episode', epno={'type': '1'})
 
-    # Extract and print details of each episode
+    # Extract and format details of each episode
     episode_details = []
     for episode in episodes:
         epno = episode.find('epno').text
@@ -25,35 +26,34 @@ def parse_anime_data(xml_content):
         airdate = episode.find('airdate').text
         title_ja = episode.find('title', {'xml:lang': 'ja'}).text
         title_en = episode.find('title', {'xml:lang': 'en'}).text
-        rating = episode.find('rating').text if episode.find('rating') else 'N/A'
-        
+        title_romaji = episode.find('title', {'xml:lang': 'x-jat'}).text if episode.find('title', {'xml:lang': 'x-jat'}) else ''
+
         episode_details.append({
-            "epno": epno,
-            "length": length,
-            "airdate": airdate,
-            "title_ja": title_ja,
-            "title_en": title_en,
-            "rating": rating
+            "episode_number": int(epno),
+            "name": f"{title_en} ( {title_ja} • {title_romaji})",
+            "date_upload": f"{airdate}T00:00:00",
+            "scanlator": f"Episode {epno} • {length}"
         })
 
     return episode_details
 
-def main(aid):
+def save_to_json(data, aid, output_dir):
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    filename = os.path.join(output_dir, f"anime_{aid}_episodes.json")
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+    print(f"Data saved to {filename}")
+
+def main(aid, output_dir):
     xml_content = fetch_anime_data(aid)
     episode_details = parse_anime_data(xml_content)
-    
-    for detail in episode_details:
-        print(f"Episode {detail['epno']}:")
-        print(f"  Length: {detail['length']} minutes")
-        print(f"  Airdate: {detail['airdate']}")
-        print(f"  Title (Japanese): {detail['title_ja']}")
-        print(f"  Title (English): {detail['title_en']}")
-        print(f"  Rating: {detail['rating']}")
-        print()
+    save_to_json(episode_details, aid, output_dir)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python scrape_anime.py <aid>")
+    if len(sys.argv) < 2:
+        print("Usage: python scrape_anime.py <aid> [output_dir]")
         sys.exit(1)
     aid = sys.argv[1]
-    main(aid)
+    output_dir = sys.argv[2] if len(sys.argv) > 2 else '.'
+    main(aid, output_dir)
