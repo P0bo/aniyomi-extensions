@@ -15,8 +15,14 @@ def fetch_anime_data(aid):
 def parse_anime_data(xml_content):
     soup = BeautifulSoup(xml_content, 'lxml-xml')
 
+    # Debug print to check the XML content
+    print(xml_content)
+
     # Find all episodes with epno type="1"
     episodes = soup.find_all('episode', epno="1")
+
+    # Debug print to check the found episodes
+    print(f"Found {len(episodes)} episodes with epno type='1'")
 
     # Extract and format details of each episode
     episode_details = []
